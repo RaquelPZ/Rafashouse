@@ -1,29 +1,72 @@
 :root{
-    background-color: black;
+    background-color: rgb(41, 40, 40);
     color: azure;
     font-family: Arial, Helvetica, sans-serif;
     gap: 25px;
+}
+
+h1{
+    color: aquamarine;
+}
+
+body{
+    margin-left: 35px;
+}
+
+main{
     display: flex;
 }
 
-button{
-    display: none;
+.cuestionario {
+    color: aquamarine;
 }
 
-.violeta{
-    color: violet;
-    margin-top: 20px;
+.muestrario{
+    display: flex;
+    flex-direction: column;
+    background-color:black;
+    color: aquamarine;
+    margin-left: 20px;
+    padding-inline: 30px;
+    padding-bottom: 20px;
+    margin-top: 10px;
+    width: 100px;
+    border-radius: 20px;
+    align-items: center;
+    font-weight: 750;
+    .muestra {
+        margin-top: 40px;
+    }
 }
+    .muestra:hover{
+        color:rgb(255, 255, 255);
+        scale: 20px;
+        transition: 0.5s;
+    }
 
-.violeta:hover{
-    color:brown;
-    transition: 0.5s;
+.imaginario {
+    font-size: 30px;
+    display: flex;
+    flex-direction: column;
+    background-color:aquamarine;
+    color: black;
+    margin-left: 20px;
+    padding-inline: 30px;
+    padding-bottom: 10px;
+    padding-top: 7px;
+    width: 36px;
+    border-radius: 20px;
+    align-items: center;
+    margin-top: 10px;
+    .icono {
+        margin-top: 13.5px;
+    }
 }
 
 .correcto{
-    color: turquoise;
+    color: rgb(166, 255, 0);
 }
 
 .incorrecto{
-    color: red;
+    color: rgb(255, 0, 60);
 }
