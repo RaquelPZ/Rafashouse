@@ -9,6 +9,38 @@ h1{
     color: aquamarine;
 }
 
+h4{
+    color: lightslategray;
+}
+
+.peque {
+    font-size: 10px;
+}
+
+a{text-decoration: none;}
+
+header{
+    display: flex;
+    flex-direction: column;
+}
+
+.cabeza{
+    display: flex;
+    flex-direction: row;
+    gap: 182px;
+    align-items: center;
+}
+
+#puntos{
+    display: flex;
+    background-color: black;
+    border-radius: 50px;
+    width: 50px;
+    height: 50px;
+    align-items: center;
+    justify-content: center;
+}
+
 body{
     margin-left: 35px;
 }
@@ -52,7 +84,6 @@ main{
     color: black;
     margin-left: 20px;
     padding-inline: 30px;
-    padding-bottom: 10px;
     padding-top: 7px;
     width: 36px;
     border-radius: 20px;
@@ -63,10 +94,93 @@ main{
     }
 }
 
+/* .opcionario {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+} */
+
 .correcto{
     color: rgb(166, 255, 0);
 }
 
 .incorrecto{
     color: rgb(255, 0, 60);
+}
+
+.on {
+    z-index: 10;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    height: 400px;
+    padding: 100px;
+    background-color: rgb(41, 40, 40);
+    margin: 0;
+}
+
+.off{
+    display: none;
+}
+
+.on2 {
+    z-index: 10;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    height: 400px;
+    padding-inline: 100px;
+    padding-block: 100px;
+    background-color:rgb(41, 40, 40);
+    margin: 0;
+}
+
+.btn_lvl {
+    display: flex;
+    background-color: black;
+    border-radius: 50px;
+    align-items: center;
+    justify-content: center;
+    width: 120px;
+    height: 40px;
+    margin: 20px;
+    background-color: aquamarine;
+    color: black;
+}
+
+.btn_lvl:hover {
+    background-color: rgb(98, 194, 162);
+    width: 125px;
+    transition: 0.4s;
+}
+
+.btn_exit {
+    display: flex;
+    background-color: black;
+    border-radius: 50px;
+    align-items: center;
+    justify-content: center;
+    width: 120px;
+    height: 40px;
+    margin: 20px;
+    color: aquamarine;
+    background-color: black;
+}
+
+.btn_exit:hover {
+    background-color: rgb(15, 14, 14);
+    width: 125px;
+    transition: 0.4s;
+}
+
+.caja_switch{
+    display: flex;
+    flex-direction: column;
 }
