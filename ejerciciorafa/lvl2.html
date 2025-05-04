@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,63 +7,105 @@
     <title>REI: lvl 2</title>
 </head>
 <body>
-
-    <header>
-        <div class="cabeza">
-            <h1>Rei: Nivel 2</h1>
-            <div id="puntos"><h2>5</h2></div>
+    <!-- En caso de GAME OVER -->
+    <div id="fin" class="off">
+      <h1>GAME</h1><h1>OVER</h1>
+      <p>💔</p>
+  </div>
+  <!-- En caso de FIN DE LVL 2 -->
+  <div id="premio" class="off">
+      <h1>ACERTASTE</h1>
+      <p>Somos bien cercanas ♡♡</p>
+      <a href="exit.html"><div id="btn_nolvl" class="btn_exit"><h3>Salir</h3></div></a>
+      <a href="lvl3.html"><div id="btn_lvl3" class="btn_lvl"><h3>Nivel 3</h3></div></a>
+      <p class="peque">Si pulsa aquí, se arriesga a perder su notable y nuestra cercana amistad, pero a cambio tendrá la oportunidad de subir su puntuación al 10.</p>
+  </div>
+  <!-- LVL 2 -->
+  <header>
+    <div class="cabeza">
+      <h1>Rei: Nivel 2</h1>
+        <div id="puntos"><h2>5</h2></div>
         </div>
         <h3>No puedes fallar, solo tienes un intento.</h3>
-    </header>
-    <main>
-        <div class="cuestionario">
-        <p>Preferencias:</p>
-<form id="preferencias">
-  <div class="opcion">
-    <label><input type="radio" name="pregunta1" value="cafe"> Café</label>
-    <label><input type="radio" name="pregunta1" value="te"> Té</label>
+  </header>
+<!-- 2A -->
+  <div class="opcionario">
+    <p><strong>A. ¿Qué prefiere Rei?</strong></p>
+    <div id="preferencias">
+      <div class="opcionA">
+        <div><label><input type="radio" name="pregunta1" value="sicafe"> Sí al café</label></div>
+        <div><label><input type="radio" name="pregunta2" value="cubata"> Cubata</label></div>
+        <div><label><input type="radio" name="pregunta3" value="corteza"> Corteza</label></div>
+        <div><label><input type="radio" name="pregunta4" value="calida"> Luz cálida</label></div>
+        <div><label><input type="radio" name="pregunta5" value="punk"> Punk</label></div>
+      </div>
+
+      <div class="opcionB">
+        <div><label><input type="radio" name="pregunta1" value="nocafe"> No al café</label></div>
+        <div><label><input type="radio" name="pregunta2" value="cerveza"> Cerveza</label></div>
+        <div><label><input type="radio" name="pregunta3" value="miga"> Miga</label></div>
+        <div><label><input type="radio" name="pregunta4" value="fria"> Luz fría</label></div>
+        <div><label><input type="radio" name="pregunta5" value="tecno"> Tecno</label></div>
+      </div> 
+
+      <div class="botones_lvl2">
+        <button id="btn_2A" class="btn_ok" type="submit">
+          <p>Comprobar <strong>A</strong></p>
+        </button>
+        <button id="btn_2B" class="btn_ok" type="submit">
+          <p>Comprobar <strong>B</strong></p>
+        </button>
+      </div> 
+
+    </div>
+
+    <!-- 2B -->
+    <p><strong>B. ¿A qué 5 querría Rei en su equipo?</strong></p>
+    <div id="equipo">
+      <div class="equipoA">
+        <div><label><input type="checkbox" name="pregunta1" value="cafe"> Harley Queen</label></div>
+        <div><label><input type="checkbox" name="pregunta2" value="vino"> Viuda Negra</label></div>
+        <div><label><input type="checkbox" name="pregunta3" value="corteza"> Spiderman</label></div>
+        <div><label><input type="checkbox" name="pregunta4" value="calida"> Clarke Griffin</label></div>
+        <div><label><input type="checkbox" name="pregunta5" value="punk"> 11</label></div>
+      </div>
+
+      <div class="equipoB">
+        <div><label><input type="checkbox" name="pregunta1" value="te"> Stitch</label></div>
+        <div><label><input type="checkbox" name="pregunta2" value="cerveza"> Tom Raider</label></div>
+        <div><label><input type="checkbox" name="pregunta3" value="miga"> Indra kom Trikru</label></div>
+        <div><label><input type="checkbox" name="pregunta2" value="fria"> Arwen</label></div>
+        <div><label><input type="checkbox" name="pregunta3" value="tecno"> Hiedra Venenosa</label></div>
+      </div>
+
+      <div class="equipoC">
+        <div><label><input type="checkbox" name="pregunta1" value="te"> Lexa kom Trikru</label></div>
+        <div><label><input type="checkbox" name="pregunta2" value="cerveza"> Trinity</label></div>
+        <div><label><input type="checkbox" name="pregunta3" value="miga"> Sansa Star</label></div>
+        <div><label><input type="checkbox" name="pregunta2" value="fria"> Claire Redfield</label></div>
+        <div><label><input type="checkbox" name="pregunta3" value="tecno"> Gina Linetti</label></div>
+      </div>
+    </div>
+    <div id="cromos_2B" ></div>
   </div>
 
-  <div class="opcion">
-    <label><input type="radio" name="pregunta2" value="vino"> Vino</label>
-    <label><input type="radio" name="pregunta2" value="cerveza"> Cerveza</label>
-  </div>
-
-  <div class="opcion">
-    <label><input type="radio" name="pregunta3" value="corteza"> Corteza</label>
-    <label><input type="radio" name="pregunta3" value="miga"> Miga</label>
-  </div>
-
-  <div class="opcion">
-    <label><input type="radio" name="pregunta4" value="calida"> Luz cálida</label>
-    <label><input type="radio" name="pregunta2" value="fria"> Luz fría</label>
-  </div>
-
-  <div class="opcion">
-    <label><input type="radio" name="pregunta5" value="punk"> Punk</label>
-    <label><input type="radio" name="pregunta3" value="tecno"> Tecno</label>
-  </div>
-
-  <button class="btn_lvl" type="submit">Aceptar</button>
-
-  <label for="colorFavorito">Elige un color:</label>
+  <!-- <label for="colorFavorito">Elige un color:</label>
 <input type="color" id="colorFavorito" name="colorFavorito"> 
 </form>
 <a href=""><div id="btn_22" class="btn_exit"><h3>Aceptar</h3></div></a>
 
-<div id="resultado"></div>
+<div id="resultado"></div> -->
 
          
         <!-- <div class="imaginario">
             
         </div> -->
-        
-    </main>
+
 
     <article>
-        <h4>Tiene 1 minuto para responder. </h4>
+        <h4>Tiene 2 minutos para responder. </h4>
     </article>
 
-    <script src="script.js"></script>
+    <script src="lvl2.js"></script>
 </body>
 </html>

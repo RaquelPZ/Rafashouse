@@ -140,13 +140,12 @@ function comprobarValorLuz(){
     }
 };
 
+
 const elFin = document.querySelector ("#fin");
 const elTiempo = setTimeout (() => {
     elFin.classList.remove ('off');
     elFin.classList.add ('on');
-}, 1*60*1000);
-
-// const laIgualdad = valorColor === elColor && valorSigno === elSigno &&  valorEstacion === laEstacion && valorLuz === laLuz && valorPerso === laPerso;
+}, 2*60*1000);
 
 document.addEventListener("keyup", (event) =>{
     contadorC.innerHTML = elContador;
@@ -155,17 +154,5 @@ document.addEventListener("keyup", (event) =>{
         console.log ('Todo correcto');
         elPremio.classList.remove ('off');
         elPremio.classList.add ('on2');
-    }
-});
-const colorBueno = "#0AE6CC";
-const colorElegido = document.getElementById('colorFavorito').value; // Esto devolverá un valor hexadecimal, como "#ff0000"
-const btnAceptar = document.querySelector ("#btn_22");
-
-btnAceptar.addEventListener("click", (event) =>{
-    if ( colorBueno === colorElegido ) {
-        // clearTimeout (elTiempo);
-        btnAceptar.classList.add("correcto");
-    } else {
-        btnAceptar.classList.add("incorrecto");
     }
 });

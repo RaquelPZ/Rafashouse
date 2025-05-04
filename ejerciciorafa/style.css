@@ -94,13 +94,6 @@ main{
     }
 }
 
-/* .opcionario {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-} */
-
 .correcto{
     color: rgb(166, 255, 0);
 }
@@ -180,7 +173,52 @@ main{
     transition: 0.4s;
 }
 
+.btn_ok {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+    width: 120px;
+    height: 45px;
+    margin: 10px;
+    margin-left: 60px;
+    background-color: aquamarine;
+    color: black;
+}
+
 .caja_switch{
     display: flex;
     flex-direction: column;
+}
+
+.opcionario {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.5;
+
+} 
+
+#preferencias {
+    display: flex;
+    gap: 25px;
+    color: aliceblue;
+    flex-direction: row;
+}
+
+#equipo{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+#cromos_2B  {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    border-radius: 10px;
+    width: 425px;
+    height: 100px;
+    margin-top: 10px;
+    background-color: aquamarine;
+    color: black;
 }
