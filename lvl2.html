@@ -26,11 +26,12 @@
       <h1>Rei: Nivel 2</h1>
         <div id="puntos"><h2>5</h2></div>
         </div>
-        <h3>No puedes fallar, solo tienes un intento.</h3>
+        <h3>No puedes fallar, solo puedes comprobar una vez cada uno o se acabó.</h3>
   </header>
+
 <!-- 2A -->
   <div class="opcionario">
-    <p><strong>A. ¿Qué prefiere Rei?</strong></p>
+    <h3>¿Qué elegiría?</h3>
     <div id="preferencias">
       <div class="opcionA">
         <div><label><input type="radio" name="pregunta1" value="sicafe"> Sí al café</label></div>
@@ -47,20 +48,16 @@
         <div><label><input type="radio" name="pregunta4" value="fria"> Luz fría</label></div>
         <div><label><input type="radio" name="pregunta5" value="tecno"> Tecno</label></div>
       </div> 
+    </div>
 
       <div class="botones_lvl2">
         <button id="btn_2A" class="btn_ok" type="submit">
-          <p>Comprobar <strong>A</strong></p>
-        </button>
-        <button id="" class="btn_ok" type="submit">
-          <p>Comprobar <strong>B</strong></p>
+          <p><strong>Comprobar</strong></p>
         </button>
       </div> 
 
-    </div>
-
     <!-- 2B -->
-    <p><strong>B. ¿A qué 5 querría Rei en su equipo?</strong></p>
+    <h3>¿Qué equipo formaría?</h3>
     <div id="equipo">
       <div class="equipoA">
         <div><label><input type="checkbox" name="pregunta0" value="harley" class="equipo_check">
@@ -73,6 +70,12 @@
           Clarke Griffin</label></div>
         <div><label><input type="checkbox" name="pregunta0" value="11" class="equipo_check">
           Once</label></div>
+        <div><label><input type="checkbox" name="pregunta0" value="lexa" class="equipo_check">
+          Lexa kom Trikru</label></div>
+        <div><label><input type="checkbox" name="pregunta0" value="trinity" class="equipo_check">
+          Trinity</label></div>
+        <div><label><input type="checkbox" name="pregunta0" value="sansa" class="equipo_Check">
+          Sansa Stark</label></div>
       </div>
 
       <div class="equipoB">
@@ -86,23 +89,22 @@
           Arwen</label></div>
         <div><label><input type="checkbox" name="pregunta0" value="hiedra" class="equipo_check">
           Hiedra Venenosa</label></div>
-      </div>
-
-      <div class="equipoC">
-        <div><label><input type="checkbox" name="pregunta0" value="lexa" class="equipo_check">
-          Lexa kom Trikru</label></div>
-        <div><label><input type="checkbox" name="pregunta0" value="trinity" class="equipo_check">
-          Trinity</label></div>
-        <div><label><input type="checkbox" name="pregunta0" value="sansa" class="equipo_Check">
-          Sansa Stark</label></div>
-        <div><label><input type="checkbox" name="pregunta0" value="claire" class="equipo_check">
+          <div><label><input type="checkbox" name="pregunta0" value="claire" class="equipo_check">
           Claire Redfield</label></div>
+        <div><label><input type="checkbox" name="pregunta0" value="leia" class="equipo_check">
+          Princesa Leia</label></div>
         <div><label><input type="checkbox" name="pregunta0" value="gina" class="equipo_check">
           Gina Linetti</label></div>
       </div>
+
     </div>
     <div class="equipo_cromos" ></div>
   </div>
+  <div class="botones_lvl2">
+        <button id="" class="btn_ok" type="submit">
+          <p><strong>Comprobar</strong></p>
+        </button>
+      </div> 
 
   <!-- <label for="colorFavorito">Elige un color:</label>
 <input type="color" id="colorFavorito" name="colorFavorito"> 
@@ -118,7 +120,7 @@
 
 
     <article>
-        <h4>Tiene 2 minutos para responder. </h4>
+        <h4>Tiene 5 minutos para responder. </h4>
     </article>
 
     <script src="lvl2.js"></script>

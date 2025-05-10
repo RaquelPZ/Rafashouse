@@ -145,7 +145,7 @@ const elFin = document.querySelector ("#fin");
 const elTiempo = setTimeout (() => {
     elFin.classList.remove ('off');
     elFin.classList.add ('on');
-}, 3*60*1000);
+}, 5*60*1000);
 
 document.addEventListener("keyup", (event) =>{
     contadorC.innerHTML = elContador;
