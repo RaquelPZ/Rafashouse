@@ -28,58 +28,57 @@
             <h1>¿Quién es Rei?</h1>
             <div id="puntos"><h2>0</h2></div>
         </div>
-        <h3>Escribe correctamente y la primera con mayúscula.</h3>
+        <div class="enunciado">
+            <h3>Escriba correctamente y la primera con mayúscula para evitar el error.</h3>
+        </div>
     </header>
     <main>
+        <div class="palabras">
         <div class="cuestionario">
-
-            <p class="pregunta" id="color_p">Color favorito:</p>
-            <input id="color_i" type="text" maxlength="9"
-            placeholder="Ej.: Naranja">
-
-            <p class="pregunta" id="signo_p" >Signo zodiaco:</p>
-            <input id="signo_i" type="text" maxlength="9"
-            placeholder="Ej.: Aries">
-
-
-            <p class="pregunta" id="estacion_p" >Mejor estación:</p>
-            <input id="estacion_i" type="text" maxlength="9"
-            placeholder="Ej.: Invierno">
-
-
-            <p class="pregunta" id="perso_p" >Eneagrama:</p>
-            <input id="perso_i" type="text" maxlength="9"
-            placeholder="Ej.: Uno">
-
 
             <p class="pregunta" id="luz_p" >Peor parte del cuerpo:</p>
             <input id="luz_i" type="text" maxlength="9"
-            placeholder="Ej.: Culo">
+            placeholder="Ej.: Culo" class="pregunta_input">
 
+            <p class="pregunta" id="color_p">Color favorito:</p>
+            <input id="color_i" type="text" maxlength="9"
+            placeholder="Ej.: Naranja" class="pregunta_input">
+
+            <p class="pregunta" id="signo_p" >Signo zodiaco:</p>
+            <input id="signo_i" type="text" maxlength="9"
+            placeholder="Ej.: Aries" class="pregunta_input">
+
+            <p class="pregunta" id="estacion_p" >Mejor estación:</p>
+            <input id="estacion_i" type="text" maxlength="9"
+            placeholder="Ej.: Invierno" class="pregunta_input">
+
+            <p class="pregunta" id="perso_p" >Eneagrama:</p>
+            <input id="perso_i" type="text" maxlength="9"
+            placeholder="Ej.: Uno" class="pregunta_input">
 
         </div>
 
         <div class="muestrario">
+            <p class="muestra" id="luz_m">...</p>
             <p class="muestra" id="color_m">...</p>
             <p class="muestra" id="signo_m">...</p>
             <p class="muestra" id="estacion_m">...</p>
             <p class="muestra" id="perso_m">...</p>
-            <p class="muestra" id="luz_m">...</p>
-            
+        </div>
         </div>
 
         <div class="imaginario">
+            <p class="icono" id="luz_d">.</p>
             <p class="icono" id="color_d">.</p>
             <p class="icono" id="signo_d">.</p>
             <p class="icono" id="estacion_d">.</p>
             <p class="icono" id="perso_d">.</p>
-            <p class="icono" id="luz_d">.</p>
         </div>
         
     </main>
 
     <article>
-        <h4>Tiene 2 minutos para llegar a 5 puntos o se acabó la amistad.</h4>
+        <h4>Tiene 3 minutos para llegar a 5 puntos o se acabó nuestra amistad.</h4>
     </article>
 
     <script src="script.js"></script>
